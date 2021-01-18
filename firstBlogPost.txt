@@ -1,0 +1,10 @@
+Post - Holiday Update - January 4, 2020
+
+It's been a whirlwind 2020 and we have all been looking forward to 2021! This week we met up to discuss progress made since the end of MTE 481 and over the winter break. 
+We have made leaps and bounds in terms of getting infrastructure and base functionality for our backend server, hosting services, and individual raspberry pi device servers. 
+
+In terms of our backend infrastructure, we established basic functions including an operational web server and API endpoints, as well as the database schema that will be used for our final product.
+
+We configured our webapp to function on a hosted amazon EC2 instance and ensured that it could be remotely accessed as well as adequately secured.
+
+Lastly, we setup the raspberry pi local server including some basic data management functionality. We also received all the ordered parts needed to the physical devices and established a working thermal sensor with data output to the pi.
