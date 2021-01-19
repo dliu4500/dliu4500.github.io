@@ -1,0 +1,26 @@
+Our Team
+
+The team behind Rheo is made up of 4 Mechatronics Engineering students from the University of Waterloo. Brining this project to life used a variety of interdisciplinary skills. Here's a little more about each of us and our roles at Rheo. 
+
+[put these descriptions under our photos like they do here https://spoteria.github.io/]
+
+Naitao Cui
+Hardware Integration and Computer Vision
+
+Derek Liu
+Mechanical Design and Backend Developlement
+
+Jason Ni
+Project Management and Data Engineering
+
+Mulan Ramani
+Software Infrastructure and Frontend Developement
+
+
+
+
+
+
+
+
+
