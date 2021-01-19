@@ -1,0 +1,6 @@
+Unbounded inflation of commercial real estate prices in recent years has led to billions of dollars being wasted every year by companies who underutilize their spaces. 
+At Rheo, our goal is to design a solution that can track human movement patterns within a space whilst deriving powerful insights from this data to allow users and companies to make more informed business decisions. 
+
+Your privacy is important to Rheo. Our sensors use anonymous data to accurately track user movement in spaces. 
+That means that no Personally Identifiable Information is ever collected or stored. 
+Rheo then uses this occupancy data to build usage patterns and recommendations are then shown to users on our web interface where they have full control over how they want to view their data between real-time and historical views.
