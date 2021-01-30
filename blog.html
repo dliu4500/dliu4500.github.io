@@ -53,7 +53,7 @@
 
 <main>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="product">
+  <div class="d-md-flex flex-md-equal w-70 my-md-3 ps-md-3" id="product-1">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-5">Blog Board</h2>
@@ -64,7 +64,63 @@
     </div>
   </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="product">
+  <div class="d-md-flex flex-md-equal w-70 my-md-3 ps-md-3" id="product-1">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-6">Post 3 - Communication is Key! - January 30, 2020</h2>
+        <p class="lead">
+            The team at Rheo has made some large strides this week in getting closer to a minimum viable product. Given that everything is online this term, maintaining proper channels for communication has been an integral part of our progress. The team meets biweekly to update each other on ongoing tasks as well as plan and prioritize for next steps. In addition, all work is tracked through Asana so any dependencies and blockers can be identified and addressed efficiently. The main areas of focus for this week included developing the core of the client API, starting the housing manufacturing process, and building out the computer vision algorithms for occupancy tracking.
+        </p>
+        <h5 class="display-7">Hardware</h5>
+        <p class="lead">
+          The CAD renders for the device outer housing have been cleaned up and a WATiMake service order has been submitted. And now we wait... Given the current restrictions in place, WATiMake is only open on Monday, Wednesdays, and Fridays so there's a good chance that there's a large backlog of orders that have been placed from other students and FYDP groups. Stay tuned for any updates about the status of our order. In the meantime however, a render of our device is the best option we have:
+          <div class="row">
+            <div class="col">
+              <img src="./static/device-render-1.PNG" class="img-thumbnail">
+              <figcaption class="figure-caption">Rheo Device Render - Bottom view</figcaption>
+            </div>
+            <div class="col">
+              <img src="./static/device-render-2.PNG" class="img-thumbnail">
+              <figcaption class="figure-caption">Rheo Device Render - Top view</figcaption>
+            </div>
+          </div>
+        </p>
+        <p class="lead">
+          Thanks, we think they look pretty slick too (shoutout to our resident Mechanical Design lead Derek). The following render provides an exploded view of our Rheo devices along with the main components and separate pieces of the main housing:
+          <div class="col">
+            <img src="./static/device-component-breakdown.PNG" class="img-thumbnail">
+            <figcaption class="figure-caption">Rheo Device Render - Exploded Component View</figcaption>
+          </div>  
+        </p>
+        <p class="lead">
+          The housing uses an enclosed box design to maintain simplicity while making efficient use of internal space to house the hardware. The bottom housing a flat plate with mounting points for the Raspberry Pi and thermal sensor, as well as a cutout for the sensor. The inner side of the shell sits flush with both the top and bottom house and uses a small lip to lock them in place. 
+
+          The purpose of the arm is to attach the main housing to the mounting solution. It also helps to orient the housing downwards and keeps it away from the wall so that the sensor is not obstructed. It has a circular cutout that aligns with the top housing to allow for cable passthrough and has a corresponding cutout on top for the cable to exit. 
+        </p>
+        <h5 class="display-7">Software</h5>
+        <p class="lead">
+          On the software side of things, the client API is starting to take shape. Preliminary endpoints including creation, deletion, and simple querying of objects in our database have been written. A simplified data schema is presented in the following picture:
+
+          <div class="col">
+            <img src="./static/schema.PNG" class="img-thumbnail">
+            <figcaption class="figure-caption">Rheo Database Schema - Simplified</figcaption>
+          </div>  
+        </p>
+        <p class="lead">
+          These endpoints provide the foundation for more complex functions that contain business logic which can now start to be developed. An example is the realtime data endpoint which returns the current occupancy of a given space along with the current trend of the space. This endpoint was just finished and is currently in the process of being tested with mock data. 
+        </p>
+        <p class="lead">
+          Lastly we have computer vision. The team has been looking into different methods of detecting crowd flow through the thermal sensor output data. Some algorithms being considered are blob detection, object tracking, as well as background subtraction. Each one of these algorithms will be evaluated on accuracy and performance. 
+        </p>
+        <h5 class="display-7">Next Steps</h5>
+        <p class="lead">
+          The priority for the team this week is computer vision and the web interface. These are the last crucial missing pieces of the pipeline which are needed to complete the end-to-end demo of Rheo's product. Specifically, we hope to have a working device prototype that can accurately (to our specifications) track the occupancy of one space with a single door. As for the front end client, we hope to have a couple of pages with some of the basic elements of our product. Lastly, the backend API which connects all the separate components is continously being extended as the other parts are worked on. That brings us to the end of this weeks updates, thanks for sticking with us and please stay tuned for more exciting updates next week! (perhaps a video! :3)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-70 my-md-3 ps-md-3" id="product-1">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-6">Post 2 - Full Steam Ahead - January 24, 2020</h2>
@@ -72,13 +128,13 @@
             We're three weeks into the Winter term and courses have started to ramp up which only means that deadlines are coming! On the bright side, Winter Solstice just passed so the days only gets brighter from here. The team has been working hard towards developing a functional end to end solution for Rheo. This past week we had our first advisor meeting with Prof. Tung and Prof. Kennings where we gave a brief update. Some key takeaways from that meeting include putting a priority on finding a way to 3D print our device housing given the current circumstances and developing a minimum viable product that can be demoed at the next meeting in around a month.
         </p>
         <p class="lead">
-            As for member specific updates, Naitao has been leading the research and development of the computer vision algorithms on the device for occupancy detection. In addition, Derek has been finalizing our CAD models in preparation for 3D printing (We're trying to get things right on the first try). He has also been working to finalize the interface between the devices and our backend which invovles implementing the data transfer schema in which data is being sent by the devices to our backend to be processed and stored. Lastly, Jason and Mulan have been working on the client product which includes the backend API and web application. API specifications are being worked out and basic pages are being developed. Stay tuned for more exicintg updates next week!
+            As for member specific updates, Naitao has been leading the research and development of the computer vision algorithms on the device for occupancy detection. In addition, Derek has been finalizing our CAD models in preparation for 3D printing (We're trying to get things right on the first try). He has also been working to finalize the interface between the devices and our backend which invovles implementing the data transfer schema in which data is being sent by the devices to our backend to be processed and stored. Lastly, Jason and Mulan have been working on the client product which includes the backend API and web application. API specifications are being worked out and basic pages are being developed. Stay tuned for more exciting updates next week!
         </p>
       </div>
     </div>
   </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="product">
+  <div class="d-md-flex flex-md-equal w-7 my-md-3 ps-md-3" id="product-1">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-6">Post 1 - Holiday Update - January 4, 2020</h2>
