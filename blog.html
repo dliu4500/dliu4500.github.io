@@ -64,7 +64,75 @@
     </div>
   </div>
 
-    <div class="d-md-flex flex-md-equal w-70 my-md-3 ps-md-3" id="product-1">
+  <div class="d-md-flex flex-md-equal w-70 my-md-3 ps-md-3" id="product-1">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-6">Post 5 - Reading Break! - February 15, 2021</h2>
+        <p class="lead">
+          It's reading break at UWaterloo which means school's out for the week!
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2Oo8QzDHimQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </p>
+        <p class="lead">
+           Well... not completely. While there are no lecture videos posted and assignments cannot be due during reading week, it is traditionally used by students to catch up on classes they've fallen behind in or to finish up assignments with impeding deadlines. The team at Rheo hasn't been doing too much reading other than lookinginto the occasional Vue/Bootstrap documentation, but we've been hard at work on developing our product. 
+        </p>
+        <h5 class="display-7">Computer Vision</h5>
+        <p class="lead">
+          Device tracking has made significant improvements! Our devices are now able to track people moving across the field of view of the thermal sensors. This was done with background subtraction and blob detection on the ouput of the thermal sensor. The background subtraction was utilized to reduce noise and prepare the sensor data for blob detection. Blob detection was then run on the sensor data to find and track users walking across. From the location of where the first blob is located, a direction can also be derived. The following screenshow shows the basic tracking capability of our devices.
+          <div class="row"> 
+            <div class="col">
+              <img src="./static/heatMap.gif" class="img-thumbnail">
+              <figcaption class="figure-caption">Rheo Device - Basic Tracking</figcaption>
+            </div>
+          </div>
+        </p>
+        <h5 class="display-7">Front End</h5>
+        <p class="lead">
+          There are a couple of significant updates to our web interface. The first is the development of user accounts and authentication. Users will now be directed to the sign in page if they are not already logged in. Once they login successfully, they are able to access the full product and the spaces and data associated with their company. In addition to user accounts, a new settings page was also developed. This gives users the ability to change and update information about their account such as names, email addresses, and their password.
+        </p>
+        <p class="lead">
+          Another essential addition to the product is the development of the Configurations page. This is a core feature which allows users to add/modify/delete devices, spaces, and connections to their company. It essentially lets users model and set up their spaces so that our devices can start tracking occupancy and analyzing the data. The following videos provides a sneak peek of these new features:
+          <div class="row"> 
+            <div class="col">
+              <img src="./static/heatMap.gif" class="img-thumbnail">
+              <figcaption class="figure-caption">Rheo Product - New Features</figcaption>
+            </div>
+          </div>
+        </p>
+        <h5 class="display-7">Mechanical</h5>
+        <p class="lead">
+          We received confirmation for the competion of the 3D printing of our housing and picked up all the individual components this past week. During assembly however, we noticed that there was an oversight regarding the thickness of the housing components. As a result, the locking mechanisms for the individual components did fit in. As a result, we had to adjust some of the CAD for the housing and we'll be submitting a new print request shortly. Even though we weren't able to get things right the first time (re: Blog #2), we're optimisitc that we'll be able to build a prototype of the device before our demo given the short turnaround for the first print job. While the first housing didn't snap into place like we'd hope, it was still amazing to be able to see our devices taking shape. Here's a picture of prototype #0.5!
+          <div class="row">
+            <div class="col">
+              <img src="./static/historical_page.gif" class="img-thumbnail">
+              <figcaption class="figure-caption">Rheo device prototype #0.5</figcaption>
+            </div>
+          </div>
+        </p>
+        <h5 class="display-7">Data</h5>
+        <p class="lead">
+          Given that development for the web client, backend, and devices are occuring in parallel, there is not enough data being generated from our sensors to accurately model the utilization of a commercial space. As a result, a data simulation script was written to generate realistic usage data for the purposes of development. If you revisit our last blog post, you'll notice that some of the utilization graphs on the historical page don't make the most sense for a room in a commercial space. The new data generation script models a small startup. As a result, there is one company created, 4 admin users created, and around 10 connected spaces with varying types and max occupancies. These spaces include two common areas, a large conference room, two smaller meeting rooms, one office, 2 restrooms, and a kitchen area. Once all the space data was generated, the events could be filled in. A configuration file was created for each room to model typical usage for that type of room. For example, a conference room would mostly be utilized in time slots of 30 minutes. In addition, it is likely for meeting rooms to be highly used during the weekdays and less so on weekends. In addition, during lunch times, meeting rooms are usually empty and employees congregate in the common spaces as well as the kitchen. All of these elements were used in generating realistic space utilization data for all the rooms for a given month.
+          <div class="row">
+            <div class="col">
+              <img src="./static/historical_page.gif" class="img-thumbnail">
+              <figcaption class="figure-caption">Realistic space utilization data</figcaption>
+            </div>
+          </div>
+        </p>
+        <p class="lead">
+          The picture above shows the new utilization data that is generated. This will help the team immensely during web development as well as for demoes while the actual devices are continually improved.
+        </p>
+        <h5 class="display-7">Next Steps</h5>
+        <p class="lead">
+          The focus of this week is to continue front end development. Specifically, the Gauge components for the realtime data elements on the home page as well as expanding the features on the Historical page are the goals for this week. In addition, the device computer vision tracking systems will be continually developed to work better in various environments and situations. Lastly, the data simulation script is being expanded to include realtime data generation for development purposes. 
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-70 my-md-3 ps-md-3" id="product-1">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-6">Post 4 - Show don't tell - February 7, 2021</h2>
