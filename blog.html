@@ -82,7 +82,7 @@
           Device tracking has made significant improvements! Our devices are now able to track people moving across the field of view of the thermal sensors. This was done with background subtraction and blob detection on the ouput of the thermal sensor. The background subtraction was utilized to reduce noise and prepare the sensor data for blob detection. Blob detection was then run on the sensor data to find and track users walking across. From the location of where the first blob is located, a direction can also be derived. The following screenshow shows the basic tracking capability of our devices.
           <div class="row"> 
             <div class="col">
-              <img src="./static/heatMap.gif" class="img-thumbnail">
+              <img src="./static/trackingGif.gif" class="img-thumbnail">
               <figcaption class="figure-caption">Rheo Device - Basic Tracking</figcaption>
             </div>
           </div>
@@ -115,7 +115,7 @@
           Given that development for the web client, backend, and devices are occuring in parallel, there is not enough data being generated from our sensors to accurately model the utilization of a commercial space. As a result, a data simulation script was written to generate realistic usage data for the purposes of development. If you revisit our last blog post, you'll notice that some of the utilization graphs on the historical page don't make the most sense for a room in a commercial space. The new data generation script models a small startup. As a result, there is one company created, 4 admin users created, and around 10 connected spaces with varying types and max occupancies. These spaces include two common areas, a large conference room, two smaller meeting rooms, one office, 2 restrooms, and a kitchen area. Once all the space data was generated, the events could be filled in. A configuration file was created for each room to model typical usage for that type of room. For example, a conference room would mostly be utilized in time slots of 30 minutes. In addition, it is likely for meeting rooms to be highly used during the weekdays and less so on weekends. In addition, during lunch times, meeting rooms are usually empty and employees congregate in the common spaces as well as the kitchen. All of these elements were used in generating realistic space utilization data for all the rooms for a given month.
           <div class="row">
             <div class="col">
-              <img src="./static/historical_page.gif" class="img-thumbnail">
+              <img src="./static/fakedata.png" class="img-thumbnail">
               <figcaption class="figure-caption">Realistic space utilization data</figcaption>
             </div>
           </div>
@@ -125,7 +125,7 @@
         </p>
         <h5 class="display-7">Next Steps</h5>
         <p class="lead">
-          The focus of this week is to continue front end development. Specifically, the Gauge components for the realtime data elements on the home page as well as expanding the features on the Historical page are the goals for this week. In addition, the device computer vision tracking systems will be continually developed to work better in various environments and situations. Lastly, the data simulation script is being expanded to include realtime data generation for development purposes. 
+          The focus of this week is to continue front end development. Specifically, the Gauge components for the realtime data elements on the home page as well as expanding the features on the Historical page are the goals for this week. In addition, the device computer vision tracking systems will be continually developed to work better in various environments and situations. Lastly, the data simulation script is being expanded to include realtime data generation for development purposes. That's it for this week! Stay tuned for more updates.
         </p>
         </p>
       </div>
