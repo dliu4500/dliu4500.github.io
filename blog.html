@@ -69,11 +69,11 @@
       <div class="my-3 p-3">
         <h2 class="display-6">Post 7 - Pretty Colors and Analytics! - February 28, 2021</h2>
         <p class="lead">
-            We've got some exciting updates for you all this week! Maybe not as exciting as the new photos of Mars from NASA's Perseverance, but I think we make a strong case for being a runner up. We had our second advisor meeting this week. We showed them a demo of the web product as well as the tracking ability of the devices. The takeaways were positive and we received some good feedback and are on track to completing our MVP for the next meeting which is in two weeks. Two major areas of focus for these following weeks include improving the tracking capability of the devices, specifically when people are closely clumped together. The other area is our web product where we've planned a visual overhaul as well as some other minor feature additions for analytics and recommendations.  
+            We've got some exciting updates for you all this week! Well, maybe not as exciting as the new photos of Mars from NASA's Perseverance, but I think we make a strong case as a close runner up. We had our second advisor meeting this week. We showed them a demo of the web product as well as the tracking ability of the devices. The takeaways were positive and we received some good feedback. The team is on track to completing our MVP for the next meeting which is in two weeks. The two major areas of focus for this week was improving the tracking capability of the devices, specifically when people are closely clumped together and our web product where we've planned a visual overhaul as well as some other minor feature additions for analytics and recommendations.  
         </p>
         <h5 class="display-7">Computer Vision</h5>
         <p class="lead">
-          Blob detection has been improved for a couple of different environment such as when multiple people are in the frame at once and moving in different directions. One area that is still being improved is when people are bunched up and the blobs are touching. When this happens the device occasionally detects one person when it should detect two. The video below shows the update device tracking ability with bounding box and occupancy tracking.
+          Blob detection has been improved for a couple of different scenarios such as when multiple people are in the frame at once and moving in different directions. One area that is still under development is when people are bunched up and the blobs are touching. When this happens the device occasionally detects one person when it should detect two. The video below shows the updated device tracking ability with bounding boxes and occupancy counts.
           <div class="row"> 
             <div class="col">
               <img src="./static/bounding-box.gif" class="img-thumbnail">
@@ -83,7 +83,7 @@
         </p>
         <h5 class="display-7">Software</h5>
         <p class="lead">
-          This week's focus was on the analytics component for the historical page as well as an entire visual overhaul of the web product. Analytics added many different metrics to our Historical page. These metrics are computed for each space individually and are based on othe query period that is selected. The video below gives an overview of our new metrics feature!
+          The analytics feature adds many different metrics to our Historical page. These metrics are computed for each space individually and are based on the query period that is selected. The video below gives an overview of our new metrics feature!
           <div class="row"> 
             <div class="col">
               <video width="75%" autoplay loop muted>
@@ -94,7 +94,7 @@
           </div>
         </p>
         <p class="lead">
-          There are four metrics that are displayed on the Historical page. The first one is overall utilization which is the average utilization of the selected room over the query period. The second is trending utilization which gives an indication of how the room utilization changed from the last period to the current period. It is given as a percentage. The third metric is a breakdown of how full the given room was over the current period. There are three levels: Unoccupied, Partially Occupied, and Fully Occupied. These thresholds will be user configurable in the future, but are preset currently. Lastly, the Peak Times metric gives the times where the room was utilized the most over the last period. Currently it is the top 20% of utilized times. Again, this is another threshold that can be made to be configurable in the future.
+          There are four metrics that are displayed on the Historical page. The first one is overall utilization which is the average utilization of the selected room over the query period. The second is trending utilization which gives an indication of how the room utilization has changed from the last period to the current period. It is given as a percentage. The third metric is a breakdown of how full the given room was over the current period. There are three distinct levels: Unoccupied, Partially Occupied, and Fully Occupied. These thresholds will be user configurable in the future but are preset currently. Lastly, the Peak Times metric gives the times where the room was utilized the most over the last period. Currently it's set to the top 20% of utilized times. Again, this is another threshold that can be made to be configurable in the future.
         </p>
         <p class="lead">
           The second focus of this week was the UI design of the web product. At the moment the web client is not very appealing to use given the dated dashboards and lack of colour. To improve usability and tie dashboard elements together, the team has been working on a complete visual overhaul. The first step was to determine a colour palette:
@@ -106,29 +106,29 @@
           </div>
         </p>
         <p class="lead">
-          Once the main colours were selected, a logo could be created. The following logo is inspired by rho, the symbol for density and Rheo which is a combining form used like a prefix meaning "flow" in Greek.
+          Once the main colours were selected, a logo could be created. The following logo is inspired by rho, the symbol for density and our name, Rheo which is a combining form used like a prefix meaning "flow" in Greek.
           <div class="row"> 
             <div class="col">
               <img src="./static/logo.png" class="img-thumbnail">
-              <figcaption class="figure-caption">Rheo Colour Palette</figcaption>
+              <figcaption class="figure-caption">Rheo Logo</figcaption>
             </div>
           </div>
         </p>
         <p class="lead">
-          Once the logo was created, the team started to modernize our web product. The video below shows a small preview of the updated UI.
+          With the creation of the logo, the team started to modernize the web client. The following video shows a small preview of the updated UI.
           <div class="row"> 
             <div class="col">
               <video width="80%" autoplay loop muted>
                 <source src="./static/navUpdate.mp4" type="video/mp4">
               </video>
-              <figcaption class="figure-caption">Rheo Client - Update Nav Bar</figcaption>
+              <figcaption class="figure-caption">Rheo Client - Updated Nav Bar</figcaption>
             </div>
           </div>
         </p>
         
         <h5 class="display-7">Infrastructure</h5>
         <p class="lead">
-          We've deployed our application on Heroku! This allows the web client to auto deploy when changes are merged on GitHub which decreases the possible points of failure and reduces development time. This may not seem like an update that may affect our customers but happier devs = more productive devs = a better propduct :). 
+          We've deployed our application on Heroku! This allows the web client to auto deploy when changes are merged on GitHub. This decreases possible points of failure and reduces development time cycles. This may not seem like an update that may affect our customers but happier devs = more productive devs = a better product :). 
         </p>
         <h5 class="display-7">Hardware</h5>
         <p class="lead">
