@@ -67,6 +67,84 @@
   <div class="d-md-flex flex-md-equal w-7 my-md-3 ps-md-3" id="product-1">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
+        <h2 class="display-6">Post 7 - Pretty Colors and Analytics! - February 28, 2021</h2>
+        <p class="lead">
+            We've got some exciting updates for you all this week! Maybe not as exciting as the new photos of Mars from NASA's Perseverance, but I think we make a strong case for being a runner up. We had our second advisor meeting this week. We showed them a demo of the web product as well as the tracking ability of the devices. The takeaways were positive and we received some good feedback and are on track to completing our MVP for the next meeting which is in two weeks. Two major areas of focus for these following weeks include improving the tracking capability of the devices, specifically when people are closely clumped together. The other area is our web product where we've planned a visual overhaul as well as some other minor feature additions for analytics and recommendations.  
+        </p>
+        <h5 class="display-7">Computer Vision</h5>
+        <p class="lead">
+          Blob detection has been improved for a couple of different environment such as when multiple people are in the frame at once and moving in different directions. One area that is still being improved is when people are bunched up and the blobs are touching. When this happens the device occasionally detects one person when it should detect two. The video below shows the update device tracking ability with bounding box and occupancy tracking.
+          <div class="row"> 
+            <div class="col">
+              <img src="./static/bounding-box.gif" class="img-thumbnail">
+              <figcaption class="figure-caption">Rheo Device - Tracking with Occupancy</figcaption>
+            </div>
+          </div>
+        </p>
+        <h5 class="display-7">Software</h5>
+        <p class="lead">
+          This week's focus was on the analytics component for the historical page as well as an entire visual overhaul of the web product. Analytics added many different metrics to our Historical page. These metrics are computed for each space individually and are based on othe query period that is selected. The video below gives an overview of our new metrics feature!
+          <div class="row"> 
+            <div class="col">
+              <video width="75%" autoplay loop muted>
+                <source src="./static/historical.mp4" type="video/mp4">
+              </video>
+              <figcaption class="figure-caption">Rheo Client - Historical Analytics</figcaption>
+            </div>
+          </div>
+        </p>
+        <p class="lead">
+          There are four metrics that are displayed on the Historical page. The first one is overall utilization which is the average utilization of the selected room over the query period. The second is trending utilization which gives an indication of how the room utilization changed from the last period to the current period. It is given as a percentage. The third metric is a breakdown of how full the given room was over the current period. There are three levels: Unoccupied, Partially Occupied, and Fully Occupied. These thresholds will be user configurable in the future, but are preset currently. Lastly, the Peak Times metric gives the times where the room was utilized the most over the last period. Currently it is the top 20% of utilized times. Again, this is another threshold that can be made to be configurable in the future.
+        </p>
+        <p class="lead">
+          The second focus of this week was the UI design of the web product. At the moment the web client is not very appealing to use given the dated dashboards and lack of colour. To improve usability and tie dashboard elements together, the team has been working on a complete visual overhaul. The first step was to determine a colour palette:
+          <div class="row"> 
+            <div class="col">
+              <img width="60%" src="./static/palette.png" class="img-thumbnail">
+              <figcaption class="figure-caption">Rheo Colour Palette</figcaption>
+            </div>
+          </div>
+        </p>
+        <p class="lead">
+          Once the main colours were selected, a logo could be created. The following logo is inspired by rho, the symbol for density and Rheo which is a combining form used like a prefix meaning "flow" in Greek.
+          <div class="row"> 
+            <div class="col">
+              <img src="./static/logo.png" class="img-thumbnail">
+              <figcaption class="figure-caption">Rheo Colour Palette</figcaption>
+            </div>
+          </div>
+        </p>
+        <p class="lead">
+          Once the logo was created, the team started to modernize our web product. The video below shows a small preview of the updated UI.
+          <div class="row"> 
+            <div class="col">
+              <video width="80%" autoplay loop muted>
+                <source src="./static/navUpdate.mp4" type="video/mp4">
+              </video>
+              <figcaption class="figure-caption">Rheo Client - Update Nav Bar</figcaption>
+            </div>
+          </div>
+        </p>
+        
+        <h5 class="display-7">Infrastructure</h5>
+        <p class="lead">
+          We've deployed our application on Heroku! This allows the web client to auto deploy when changes are merged on GitHub which decreases the possible points of failure and reduces development time. This may not seem like an update that may affect our customers but happier devs = more productive devs = a better propduct :). 
+        </p>
+        <h5 class="display-7">Hardware</h5>
+        <p class="lead">
+          The revised CAD files for our device housing were sent to WaTiMake and they're expected to be completed sometime this week. Hopefully we'll have an update regarding the devices next week!
+        </p>
+        <h5 class="display-7">Next Steps</h5>
+        <p class="lead">
+          The focus of this week is to continue with improving the device's tracking ability especially in multi-person situations. In addition, the team continues their work on the UI refresh. Lastly, some additional components such as informational tool tips and recommendations based on historical utilization will commence this week. That brings us to the end of this weeks updates. Enjoy the warmer weather and stay safe!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-7 my-md-3 ps-md-3" id="product-1">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
         <h2 class="display-6">Post 6 - Milestones - February 21, 2021</h2>
         <p class="lead">
             It's a short update this week. We've got our second advisor meeting this Thursday so we spent the last week preparing for that. Most of the work has just been a continuation of developing features for the front end product as well as improving the devices tracking capability. 
@@ -80,7 +158,7 @@
           This week's focus was the home page and realtime data components. This includes a modular gauge component which dynamically updates with the occupancy of a given space. This will allow users to view specific room occupancies in realtime. In addition to the occupancy, each gauge provides the short term occupancy trend. This may help users identify and mitigate overcrowed rooms before they occur.
           <div class="row"> 
             <div class="col">
-              <img src="./static/homepage.png" class="img-thumbnail">
+              <img width="80%" src="./static/homepage.png" class="img-thumbnail">
               <figcaption class="figure-caption">Rheo Client - Realtime Occupancy Gauges</figcaption>
             </div>
           </div>
@@ -91,7 +169,7 @@
         </p>
         <h5 class="display-7">Next Steps</h5>
         <p class="lead">
-          The focus of this weeks is to finish up the major components of our product. Specifically we will be developing a realtime total utilization graph component for the main page as well as adding additional metrics and analytics to the Historical section. As for the devices, this weeks goal is to connect them to the backend so that they can send movement event to our backend for processing. This will complete our end to end workflow. Thanks again for you support, and we hope you have a great week.
+          The focus of this week is to finish up the major components of our product. Specifically we will be developing a realtime total utilization graph component for the main page as well as adding additional metrics and analytics to the Historical section. As for the devices, this weeks goal is to connect them to the backend so that they can send movement event to our backend for processing. This will complete our end to end workflow. Thanks again for you support, and we hope you have a great week.
         </p>
       </div>
     </div>
@@ -104,7 +182,7 @@
         <p class="lead">
           It's reading break at UWaterloo which means school's out for the week!
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2Oo8QzDHimQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="65%" height="480" src="https://www.youtube.com/embed/2Oo8QzDHimQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </p>
         <p class="lead">
@@ -138,7 +216,7 @@
           We received confirmation for the competion of the 3D printing of our housing and picked up all the individual components this past week. During assembly however, we noticed that there were a couple of issues with the dimensions of the components. First, the material thickness is causing interference for components with tight tolerances causing them to not lock in with each other. Secondly, there is slight warping in the arm components and insufficient clearance for the wires to loop through the main body to the arms. As a result, we had to adjust some of the CAD for the housing and we'll be submitting a new print request shortly. Even though we weren't able to get things right the first time (re: Blog #2), we're optimisitc that we'll be able to build a prototype of the device before our demo given the short turnaround for the first print job. While the first housing didn't snap into place like we'd hope, it is amazing to see our devices taking shape. Here's a picture of prototype #0.5!
           <div class="row">
             <div class="col">
-              <img src="./static/prototype_0.5.jpg" class="img-thumbnail">
+              <img width="50%" src="./static/prototype_0.5.jpg" class="img-thumbnail">
               <figcaption class="figure-caption">Rheo device prototype #0.5</figcaption>
             </div>
           </div>
@@ -148,7 +226,7 @@
           Given that development for the web client, backend, and devices are occuring in parallel, there is not enough data being generated from our sensors to accurately model the utilization of a commercial space. As a result, a data simulation script was written to generate realistic usage data for the purposes of development. If you revisit our last blog post, you'll notice that some of the utilization graphs on the historical page don't make the most sense for a room in a commercial space. The new data generation script models a small startup. As a result, there is one company created, 4 admin users created, and around 10 connected spaces with varying types and max occupancies. These spaces include two common areas, a large conference room, two smaller meeting rooms, one office, 2 restrooms, and a kitchen area. Once all the space data was generated, the events could be filled in. A configuration file was created for each room to model typical usage for that type of room. For example, a conference room would mostly be utilized in time slots of 30 minutes. In addition, it is likely for offices to be highly used during the weekdays and almost empty during weekends. In addition, during lunch times, meeting rooms are usually empty and employees congregate in the common spaces like the kitchen. All of these elements were used in generating realistic space utilization data for all the rooms for a given month.
           <div class="row">
             <div class="col">
-              <img src="./static/fakedata.png" class="img-thumbnail">
+              <img width="75%" src="./static/fakedata.png" class="img-thumbnail">
               <figcaption class="figure-caption">Realistic space utilization data</figcaption>
             </div>
           </div>
